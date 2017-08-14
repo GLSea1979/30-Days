@@ -34,7 +34,14 @@
     const birthYear = inventors.filter(born => {
       return (born.year >= 1500 && born.year < 1600)
     });
+    console.log('hi');
     console.table(birthYear);
+
+    const fourteen = inventors.filter( born => {
+      return (born.year > 1399 && born.year < 1500);
+    });
+
+    console.table(fourteen);
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
@@ -67,6 +74,7 @@
       }
     });
     console.table(orderAges);
+
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 

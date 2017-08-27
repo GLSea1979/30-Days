@@ -49,6 +49,13 @@
       ...comments.slice(getRid + 1)
     ];
     console.table(newComments);
+    var bye = comments.findIndex(comment => comment.text === 'Super good');
+    var newCommentsTwo = [
+      ...comments.slice(0, bye),
+      ...comments.slice(bye + 1)
+    ];
+    console.table(newCommentsTwo);
+    console.table(comments)
 
   </script>
 </body>

@@ -29,9 +29,10 @@
     // Array.prototype.every() // is everyone 19 or older?
     var large = people.some(person => (2017 - person.year) >= 19);
     var everyone = people.every(person => (2017 -person.year) >= 19);
+    var littleOne = people.every(person => (2017 - person.year) >= 1);
     console.log(large, 'there is at least one 19 year old or older here');
     console.log(everyone, 'every body is at least 19');
-
+    console.log(littleOne, 'every one is at least one');
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423

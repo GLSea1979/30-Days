@@ -40,6 +40,10 @@
        return comment.id === 823423;
     });
     console.log(found);
+    let another = comments.find(comment => {
+      return comment.id !== 2222;
+    });
+    console.log(another, 'this will return the first in array as none equal it');
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
